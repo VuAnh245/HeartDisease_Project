@@ -1,0 +1,61 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-delete-this-directory.txt
+pip-wheel-metadata/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === Virtual Environment ===
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === Data lớn & nhạy cảm ===
+# Chặn toàn bộ file CSV trong data (tránh đẩy dataset lớn)
+data/*.csv
+
+# Ngoại lệ: Cho phép file mẫu nhỏ để demo
+!data/sample_data.csv
+
+# Nếu có thư mục con chứa data lớn
+data/raw/
+data/processed/
+data/*.zip
+data/*.parquet
+
+# === Model files (thường rất lớn) ===
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# === Logs & temp files ===
+*.log
+*.tmp
+temp/
+tmp/
+
+# === OS & Editor files ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Other ===
+*.bak
+*.old
+*.orig
