@@ -59,7 +59,7 @@ Hệ thống theo pipeline ML chuẩn: **Tiền xử lý → Train → Evaluate 
    - Xử lý outlier: Clip BMI/SleepHours tại percentiles 1-99 (nếu cần).
 
 2. **Train (train.py)**:
-   - Split data: Stratified (60% Train, 20% Val, 20% Test) để giữ tỷ lệ imbalance.
+   - Split data: Stratified (64% Train, 16% Val, 20% Test) để giữ tỷ lệ imbalance.
    - Huấn luyện 3 mô hình với class_weight='balanced' hoặc scale_pos_weight.
    - Tune threshold high-recall trên Val (nới lỏng F1/Precision để max Recall, với MIN_RECALL/MIN_PRECISION tùy model).
    - Lưu bundle (.pkl): pipeline (preprocessor + model) + threshold + metadata.
