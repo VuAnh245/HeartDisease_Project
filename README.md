@@ -131,7 +131,8 @@ Kết quả tái hiện chính xác từ notebook gốc, với ROC-AUC ~0.83 ch�
     python -m app.predict
 
 
-Cấu trúc thư mục dự án
+## Cấu trúc thư mục dự án
+```text
 HeartDisease_Project/
 ├── app/
 │   ├── __init__.py
